@@ -46,4 +46,7 @@ export class AllProductsComponent implements OnInit{
       this.loading=false
     })
   }
+  add(event:any){
+    console.log(event)
+  }
 }

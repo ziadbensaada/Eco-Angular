@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AllProductsComponent } from '../products/components/all-products/all-products.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SelectComponent } from './components/select/select.component';
 
 
 
@@ -13,7 +15,9 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
   declarations: [
     HeaderComponent,
     AllProductsComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    FooterComponent,
+    SelectComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
   ],
   exports:[
     HeaderComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    FooterComponent,
+    SelectComponent
   ]
 })
 export class SharedModule { }
